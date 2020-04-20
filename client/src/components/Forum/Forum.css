@@ -1,0 +1,32 @@
+.forum-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.user-name {
+    margin-right: 10px;
+    border: 10px solid black;
+    padding: 25px;
+    width: 200px;
+}
+
+.topic-name {
+    border: 10px solid black;
+    padding: 25px;
+    width: 100%;
+
+}
+
+.topics-container {
+    margin: 7%;
+}
+
+.topics-header {
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-size: 50px;
+}

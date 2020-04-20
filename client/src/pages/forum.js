@@ -1,9 +1,13 @@
 import React from "react"
+import Forum from '../components/Forum/Forum'
 
-function Forum() {
+function forum() {
     return (
-        <h1>Forum</h1>
+        
+      <Forum />
+
+        
     )
 }
 
-export default Forum;
+export default forum;

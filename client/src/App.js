@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/BackDrop/Backdrop'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -37,7 +37,6 @@ backdropClickHandler = () => {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main style={{marginTop: '64px'}}>
-        <p>this is the page content</p>
         </main>
         <Switch>
           <Route exact path={"/"}>
@@ -46,7 +45,7 @@ backdropClickHandler = () => {
           <Route exact path={"/search"}>
             <Search />
           </Route>
-          <Route exact path={"/signup"}>
+          <Route exact path={"/signUp"}>
             <SignUp />
           </Route>
           <Route exact path={"/user/:id"}>

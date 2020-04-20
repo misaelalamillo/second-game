@@ -20,12 +20,16 @@ function SignUp() {
 
     function handleFormSubmit(event) {
         event.preventDefault();
-        if (user.name && user.userName && user.password) {
+    
+        if (user.name || user.username || user.password) {
             API.addUser({
                 name: user.name,
                 username: user.username,
                 password: user.password
-            })
+            }).then(res=>{
+                console.log(res)
+                
+            }).catch (err => console.log(err))
         }
     }
     return (
@@ -54,7 +58,7 @@ function SignUp() {
                             placeholder="Password (required)"
                         />
                         <FormBtn
-                            disabled={!(user.name && user.userName && user.password)}
+                            disabled={(!user.name || !user.username || !user.password)}
                             onClick={handleFormSubmit}
                         >
                             <Router>

@@ -1,0 +1,9 @@
+.btn-primary {
+    margin-bottom: 10px;
+}
+
+.user-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
